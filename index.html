@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./estilo/stilo.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap" rel="stylesheet">
+    <title>Spotify</title>
+</head>
+<body>
+    <div id="root">
+        <div class="fundo">
+            <div class="header">
+                <img class="logo" src="./img/spotify-logo-branca-white.png" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="login">
+                <h1>Entrar no Spotify</h1>
+                <div class="button-container">
+                    <button class="button">
+                      <img src="./img/Google-logo.png" alt="Logo" class="logo-button">
+                      Entrar com o Google
+                    </button>
+                    <button class="button">
+                      <img src="./img/facebook-logo.png" alt="Logo" class="logo-button">
+                      Entrar com o Facebook
+                    </button>
+                    <button class="button">
+                      <img src="./img/apple-logo.png" alt="Logo" class="logo-button">
+                      Entrar com o Apple
+                    </button>
+                    <button class="button">
+                      Entrar com um número do telefone
+                    </button>
+                    <hr class="separador">
+                    <div class="login-container">
+                      <form class="login-form">
+                        <label for="username">E-mail ou nome de usuário:</label>
+                        <input type="text" id="username" name="username" placeholder="E-mail ou nome de usuário" required>
+                  
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Senha" required>
+                        <span class="show-password" onclick="togglepassword()">
+                          <i class="far fa-eye"></i>
+                        </span>
+                      </form>
+                      <label>
+                        <input type="checkbox" class="toggle-input">
+                        <div class="slider">
+                          <butto class="butto-slider"></butto>
+                        </div>
+                        <span class="span-slide">Lembrar de mim</span>
+                      </label>
+                      <div class="button-center">
+                        <button class="butto-entrar" type="submit">Entrar</button>
+                        <p>Esqueceu a Senha ?</p>
+                      </div>
+                    </div>
+                    <hr class="separador">
+                    <div class="cadastro">
+                      <span class="inline-elements">Não tem uma conta ?</span>
+                      <p class="inline-elements">Inscreva-se no Spotify</p>
+                    </div>
+                </div>
+              <footer>
+                <span>Este site é protegido pelo reCAPTCHA e está sujeito à <u>Política de Privacidade</u> e aos <u>Termos de Serviço</u> do Google.</span>
+              </footer>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./src/script.js"></script>
+</body>
+</html>
